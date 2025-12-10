@@ -62,7 +62,7 @@ const App = () => (
             <Preloader />
             <Toaster />
             <Sonner />
-            <BrowserRouter>
+            <BrowserRouter basename="/E-commerce-project-chrono">
               <ScrollToTop />
               <AnimatedRoutes />
             </BrowserRouter>
