@@ -561,32 +561,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* 2. FEATURE HIGHLIGHT BAR */}
-        <section ref={featuresRef} className="py-12 border-y border-border/50 bg-background/50 backdrop-blur-sm sticky top-0 z-40">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {[
-                { icon: Shield, label: 'Lifetime Warranty' },
-                { icon: Star, label: '5-Star Reviews' },
-                { icon: Truck, label: 'Free Delivery' },
-                { icon: Headphones, label: 'Expert Support' },
-              ].map((item, index) => (
-                <motion.div
-                  key={item.label}
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex items-center gap-3 justify-center md:justify-start"
-                >
-                  <item.icon className="w-5 h-5 text-foreground flex-shrink-0" strokeWidth={1.5} />
-                  <span className="text-sm font-medium text-muted-foreground hidden sm:inline">{item.label}</span>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* 3. PRODUCTS SHOWCASE SECTION - NEW LAYOUT */}
         <section className="py-24 lg:py-32 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
