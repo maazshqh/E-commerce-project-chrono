@@ -1,3 +1,16 @@
+// Import images
+import image1 from '@/assets/image1.png';
+import image2 from '@/assets/image2.jpg';
+import image3 from '@/assets/image3.jpg';
+import image4 from '@/assets/image4.jpg';
+import gallery1 from '@/assets/gallery1.jpg';
+import gallery2 from '@/assets/gallery2.jpg';
+import gallery3 from '@/assets/gallery3.jpg';
+import gallery4 from '@/assets/gallery4.jpg';
+import gallery5 from '@/assets/gallery5.jpg';
+import gallery6 from '@/assets/gallery6.jpg';
+import gallery7 from '@/assets/gallery7.jpg';
+
 export interface Product {
   id: string;
   name: string;
@@ -44,10 +57,10 @@ export const products: Product[] = [
       weight: '42g'
     },
     images: [
-      '/src/assets/image1.png',
-      '/src/assets/image2.jpg',
-      '/src/assets/image3.jpg',
-      '/src/assets/image4.jpg'
+      image1,
+      image2,
+      image3,
+      image4
     ],
     colors: ['Midnight Black', 'Silver Titanium', 'Rose Gold']
   },
@@ -75,10 +88,10 @@ export const products: Product[] = [
       weight: '61.3g'
     },
     images: [
-      '/src/assets/gallery1.jpg',
-      '/src/assets/gallery2.jpg',
-      '/src/assets/gallery3.jpg',
-      '/src/assets/gallery4.jpg'
+      gallery1,
+      gallery2,
+      gallery3,
+      gallery4
     ],
     colors: ['Natural Titanium', 'Black Titanium', 'Alpine White']
   },
@@ -106,10 +119,10 @@ export const products: Product[] = [
       weight: '45g'
     },
     images: [
-      '/src/assets/gallery5.jpg',
-      '/src/assets/gallery6.jpg',
-      '/src/assets/gallery7.jpg',
-      '/src/assets/image4.jpg'
+      gallery5,
+      gallery6,
+      gallery7,
+      image4
     ],
     colors: ['Platinum', 'Obsidian', 'Rose Titanium']
   },
@@ -137,10 +150,10 @@ export const products: Product[] = [
       weight: '52g'
     },
     images: [
-      '/src/assets/image3.jpg',
-      '/src/assets/image4.jpg',
-      '/src/assets/gallery1.jpg',
-      '/src/assets/gallery2.jpg'
+      image3,
+      image4,
+      gallery1,
+      gallery2
     ],
     colors: ['Gold & Black', 'Silver & Brown', 'Rose Gold & Ivory']
   },
@@ -168,10 +181,10 @@ export const products: Product[] = [
       weight: '44g'
     },
     images: [
-      '/src/assets/gallery3.jpg',
-      '/src/assets/gallery4.jpg',
-      '/src/assets/image1.png',
-      '/src/assets/image2.jpg'
+      gallery3,
+      gallery4,
+      image1,
+      image2
     ],
     colors: ['Executive Black', 'Boardroom Silver', 'Midnight Blue']
   },
@@ -201,10 +214,10 @@ export const products: Product[] = [
       weight: '38g'
     },
     images: [
-      '/src/assets/image2.jpg',
-      '/src/assets/gallery5.jpg',
-      '/src/assets/gallery6.jpg',
-      '/src/assets/gallery7.jpg'
+      image2,
+      gallery5,
+      gallery6,
+      gallery7
     ],
     colors: ['Stealth Black', 'Ocean Blue', 'Neon Green']
   },
@@ -232,10 +245,10 @@ export const products: Product[] = [
       weight: '34g'
     },
     images: [
-      '/src/assets/image1.png',
-      '/src/assets/image3.jpg',
-      '/src/assets/gallery1.jpg',
-      '/src/assets/gallery2.jpg'
+      image1,
+      image3,
+      gallery1,
+      gallery2
     ],
     colors: ['Track Red', 'Marathon Black', 'Sprint Yellow']
   },
@@ -263,10 +276,10 @@ export const products: Product[] = [
       weight: '40g'
     },
     images: [
-      '/src/assets/gallery3.jpg',
-      '/src/assets/gallery4.jpg',
-      '/src/assets/image4.jpg',
-      '/src/assets/image1.png'
+      gallery3,
+      gallery4,
+      image4,
+      image1
     ],
     colors: ['Deep Sea Blue', 'Coral Orange', 'Aqua Teal']
   },
@@ -294,10 +307,10 @@ export const products: Product[] = [
       weight: '58g'
     },
     images: [
-      '/src/assets/gallery7.jpg',
-      '/src/assets/image2.jpg',
-      '/src/assets/image3.jpg',
-      '/src/assets/gallery5.jpg'
+      gallery7,
+      image2,
+      image3,
+      gallery5
     ],
     colors: ['Forest Green', 'Mountain Grey', 'Sunset Orange']
   },
@@ -325,10 +338,10 @@ export const products: Product[] = [
       weight: '36g'
     },
     images: [
-      '/src/assets/image4.jpg',
-      '/src/assets/gallery6.jpg',
-      '/src/assets/gallery1.jpg',
-      '/src/assets/gallery2.jpg'
+      image4,
+      gallery6,
+      gallery1,
+      gallery2
     ],
     colors: ['Racing Red', 'Tour Yellow', 'Carbon Black']
   },
@@ -358,10 +371,10 @@ export const products: Product[] = [
       weight: '32g'
     },
     images: [
-      '/src/assets/image1.png',
-      '/src/assets/image2.jpg',
-      '/src/assets/gallery7.jpg',
-      '/src/assets/gallery3.jpg'
+      image1,
+      image2,
+      gallery7,
+      gallery3
     ],
     colors: ['Classic Black', 'Silver', 'Champagne Gold']
   },
@@ -389,10 +402,10 @@ export const products: Product[] = [
       weight: '35g'
     },
     images: [
-      '/src/assets/image3.jpg',
-      '/src/assets/image4.jpg',
-      '/src/assets/gallery4.jpg',
-      '/src/assets/gallery5.jpg'
+      image3,
+      image4,
+      gallery4,
+      gallery5
     ],
     colors: ['Brown Leather', 'Black Leather', 'Tan']
   },
@@ -420,10 +433,10 @@ export const products: Product[] = [
       weight: '28g'
     },
     images: [
-      '/src/assets/gallery6.jpg',
-      '/src/assets/image1.png',
-      '/src/assets/image2.jpg',
-      '/src/assets/gallery1.jpg'
+      gallery6,
+      image1,
+      image2,
+      gallery1
     ],
     colors: ['Pure White', 'Slate Grey', 'Blush Pink']
   },
@@ -451,10 +464,10 @@ export const products: Product[] = [
       weight: '55g'
     },
     images: [
-      '/src/assets/image3.jpg',
-      '/src/assets/gallery2.jpg',
-      '/src/assets/gallery3.jpg',
-      '/src/assets/gallery4.jpg'
+      image3,
+      gallery2,
+      gallery3,
+      gallery4
     ],
     colors: ['Polished Steel', 'Brushed Gunmetal', 'Two-Tone Gold']
   },
@@ -482,10 +495,10 @@ export const products: Product[] = [
       weight: '42g'
     },
     images: [
-      '/src/assets/gallery5.jpg',
-      '/src/assets/gallery7.jpg',
-      '/src/assets/image4.jpg',
-      '/src/assets/image1.png'
+      gallery5,
+      gallery7,
+      image4,
+      image1
     ],
     colors: ['Racing Green', 'Panda White', 'Burgundy']
   }

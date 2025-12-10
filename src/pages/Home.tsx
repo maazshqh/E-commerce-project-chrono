@@ -561,6 +561,83 @@ const Home = () => {
           </div>
         </section>
 
+        {/* 2. FEATURE HIGHLIGHT SECTION */}
+        <section ref={featuresRef} className="py-20 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
+          {/* Background decorative elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+          </div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            {/* Section Header */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <span className="text-xs font-medium text-muted-foreground uppercase tracking-widest">Why Choose Chrono</span>
+              <h2 className="text-4xl lg:text-5xl font-black tracking-tight leading-tight mt-4">
+                Premium Experience
+              </h2>
+            </motion.div>
+
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                { 
+                  icon: Shield, 
+                  label: 'Lifetime Warranty',
+                  description: 'Complete protection for your investment',
+                  color: 'from-orange-500/10 to-orange-500/5'
+                },
+                { 
+                  icon: Star, 
+                  label: '5-Star Reviews',
+                  description: 'Trusted by thousands worldwide',
+                  color: 'from-yellow-500/10 to-yellow-500/5'
+                },
+                { 
+                  icon: Truck, 
+                  label: 'Free Delivery',
+                  description: 'Fast shipping on all orders',
+                  color: 'from-blue-500/10 to-blue-500/5'
+                },
+                { 
+                  icon: Headphones, 
+                  label: 'Expert Support',
+                  description: '24/7 customer assistance',
+                  color: 'from-purple-500/10 to-purple-500/5'
+                },
+              ].map((item, index) => (
+                <motion.div
+                  key={item.label}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  whileHover={{ y: -5, scale: 1.02 }}
+                  className="group"
+                >
+                  <div className={`relative p-8 rounded-2xl border border-border/50 bg-gradient-to-br ${item.color} backdrop-blur-sm hover:border-border transition-all duration-300 h-full`}>
+                    <div className="flex flex-col items-center text-center gap-4">
+                      <div className="p-4 rounded-xl bg-background/50 border border-border/50 group-hover:scale-110 transition-transform duration-300">
+                        <item.icon className="w-8 h-8 text-foreground" strokeWidth={1.5} />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-bold mb-2">{item.label}</h3>
+                        <p className="text-sm text-muted-foreground">{item.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* 3. PRODUCTS SHOWCASE SECTION - NEW LAYOUT */}
         <section className="py-24 lg:py-32 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
